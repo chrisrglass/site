@@ -75,3 +75,7 @@ This is a zero-configuration static site:
 | `css/main.css` | Complete styling |
 | `js/main.js` | All interactivity |
 | `.github/workflows/static.yml` | Deployment configuration |
+
+## Podcast (added 2026-09-07)
+
+`podcast/index.html` is the audiobook-documentary player for *A House-Shaped House* (eight chapters, ~2 h 3 min). It reuses `css/main.css` and adds `css/podcast.css` and `js/podcast.js`. Audio lives in `media/podcast/` as 96 kbps mono MP3 (about 87 MB total; GitHub rejects files over 100 MB, so never commit WAV masters). `podcast/feed.xml` is a hand-built RSS feed with iTunes tags; enclosure URLs and `length` (byte size) must be updated if an MP3 is replaced. Deep links take the form `podcast/#part-3&t=8m40s`. The player stores resume position and speed in `localStorage`.

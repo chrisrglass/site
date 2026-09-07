@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A House-Shaped House: the Echo Pond audiobook documentary. Eight chapters on how one house in Canton, Massachusetts came to be, from the first walk of the land to the year after moving in.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/podcast.css">
+  <link rel="alternate" type="application/rss+xml" title="A House-Shaped House" href="https://echopond.github.io/site/podcast/feed.xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A House-Shaped House | Echo Pond">
+  <meta property="og:description" content="The Echo Pond audiobook documentary, in eight chapters.">
+  <meta property="og:image" content="https://echopond.github.io/site/media/podcast/cover.jpg">
+  <meta property="og:url" content="https://echopond.github.io/site/podcast/">
+
+  <title>A House-Shaped House | Echo Pond</title>
+</head>
+<body class="podcast-page">
+
+  <header class="site-header">
+    <nav class="site-nav site-nav--centered">
+      <a href="../#site">Site</a>
+      <a href="../#material">Material</a>
+      <a href="../#space">Space</a>
+      <a href="../#history">History</a>
+      <a href="../#landscape">Landscape</a>
+      <a href="./" class="is-current">Listen</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu-nav">
+      <a href="../#site">Site</a>
+      <a href="../#material">Material</a>
+      <a href="../#space">Space</a>
+      <a href="../#history">History</a>
+      <a href="../#landscape">Landscape</a>
+      <a href="./">Listen</a>
+    </nav>
+  </div>
+
+  <main>
+    <article class="article podcast">
+
+      <header class="podcast-header">
+        <img class="podcast-cover" src="../media/podcast/cover.jpg" alt="Echo Pond at dusk, the lift-slide doors open to the pond" width="1400" height="1400">
+        <div class="podcast-header-text">
+          <p class="podcast-kicker">Audiobook Documentary</p>
+          <h1 class="podcast-title">A House-Shaped House</h1>
+          <p class="podcast-subtitle">How Echo Pond came to be, told from inside the making of it.</p>
+          <p class="podcast-byline">Written by Chris Glass</p>
+          <p class="podcast-meta"><span id="episode-count">8 chapters</span> · <span id="total-duration">2 hr 3 min</span></p>
+          <div class="podcast-actions">
+            <button class="btn btn--primary" id="play-all" type="button">Play from the beginning</button>
+            <a class="btn" href="feed.xml" id="rss-link">RSS feed</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-body podcast-intro">
+        <p class="lead">A resolved house compresses its history. It turns a choice into an appearance, a negotiation into a detail, and a sequence of provisional judgments into something that can look inevitable. This audiobook stays with one house and looks beneath the finished image: a first walk of the land conducted by phone, a brief written as life, a road that had to be paid for before it could be drawn, a form that was simple to draw and difficult to build, and the year after completion, when the house changed tense.</p>
+      </div>
+
+      <section class="episodes" aria-label="Chapters">
+        <h2 class="episodes-heading">Chapters</h2>
+        <ol class="episode-list" id="episode-list"></ol>
+      </section>
+
+      <section class="subscribe article-body">
+        <h2>Listen in a podcast app</h2>
+        <p>Copy the feed address into any podcast app that accepts a private or custom feed. In Apple Podcasts, choose <em>File → Follow a Show by URL</em>. In Overcast or Pocket Casts, choose <em>Add by URL</em>.</p>
+        <div class="feed-url">
+          <code id="feed-url">https://echopond.github.io/site/podcast/feed.xml</code>
+          <button class="btn btn--small" type="button" id="copy-feed">Copy</button>
+        </div>
+        <p class="subscribe-links">
+          <a href="overcast://x-callback-url/add?url=https%3A%2F%2Fechopond.github.io%2Fsite%2Fpodcast%2Ffeed.xml">Open in Overcast</a>
+          <a href="pktc://subscribe/echopond.github.io/site/podcast/feed.xml">Open in Pocket Casts</a>
+        </p>
+      </section>
+
+      <footer class="article-credits">
+        <h3>Credits</h3>
+        <div class="credits-grid">
+          <div class="credit">
+            <span class="credit-label">Text</span>
+            <span class="credit-value">Chris Glass</span>
+          </div>
+          <div class="credit">
+            <span class="credit-label">Architect</span>
+            <span class="credit-value">Vincent Appel, Of Possible</span>
+          </div>
+          <div class="credit">
+            <span class="credit-label">Builder</span>
+            <span class="credit-value">Nick Schiffer, NS Builders</span>
+          </div>
+        </div>
+      </footer>
+
+    </article>
+  </main>
+
+  <!-- Persistent player -->
+  <div class="player" id="player" hidden>
+    <audio id="player-audio" preload="metadata"></audio>
+    <div class="player-progress" id="player-progress" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+      <div class="player-progress-buffered" id="player-buffered"></div>
+      <div class="player-progress-played" id="player-played"></div>
+    </div>
+    <div class="player-inner">
+      <img class="player-cover" src="../media/podcast/cover.jpg" alt="">
+      <div class="player-text">
+        <span class="player-kicker">A House-Shaped House</span>
+        <span class="player-title" id="player-title">—</span>
+      </div>
+      <div class="player-controls">
+        <button class="ctl" id="btn-prev" type="button" aria-label="Previous chapter">⏮</button>
+        <button class="ctl" id="btn-back" type="button" aria-label="Back 15 seconds"><span>15</span></button>
+        <button class="ctl ctl--play" id="btn-play" type="button" aria-label="Play">▶</button>
+        <button class="ctl" id="btn-fwd" type="button" aria-label="Forward 30 seconds"><span>30</span></button>
+        <button class="ctl" id="btn-next" type="button" aria-label="Next chapter">⏭</button>
+      </div>
+      <div class="player-time"><span id="time-current">0:00</span> / <span id="time-total">0:00</span></div>
+      <div class="player-extra">
+        <button class="ctl ctl--text" id="btn-speed" type="button" aria-label="Playback speed">1×</button>
+        <button class="ctl ctl--text" id="btn-share" type="button" aria-label="Copy link to this moment">Share</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/podcast.js" defer></script>
+</body>
+</html>

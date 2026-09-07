@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>A House-Shaped House</title>
+    <link>https://echopond.github.io/site/podcast/</link>
+    <atom:link href="https://echopond.github.io/site/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <copyright>&#169; 2026 Chris Glass</copyright>
+    <description>The Echo Pond audiobook documentary. How one house in Canton, Massachusetts came to be, told from inside the making of it: from the first walk of the land to the year after moving in. Written by Chris Glass.</description>
+    <itunes:summary>The Echo Pond audiobook documentary. How one house in Canton, Massachusetts came to be, told from inside the making of it. Written by Chris Glass.</itunes:summary>
+    <itunes:author>Chris Glass</itunes:author>
+    <itunes:owner>
+      <itunes:name>Chris Glass</itunes:name>
+    </itunes:owner>
+    <itunes:image href="https://echopond.github.io/site/media/podcast/cover.jpg"/>
+    <image>
+      <url>https://echopond.github.io/site/media/podcast/cover.jpg</url>
+      <title>A House-Shaped House</title>
+      <link>https://echopond.github.io/site/podcast/</link>
+    </image>
+    <itunes:category text="Arts">
+      <itunes:category text="Design"/>
+    </itunes:category>
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Personal Journals"/>
+    </itunes:category>
+    <itunes:type>serial</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <lastBuildDate>Mon, 07 Sep 2026 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Prologue: The House That Looks Inevitable</title>
+      <itunes:title>Prologue: The House That Looks Inevitable</itunes:title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-prologue</guid>
+      <link>https://echopond.github.io/site/podcast/#prologue</link>
+      <pubDate>Mon, 07 Sep 2026 11:53:00 +0000</pubDate>
+      <description>A resolved surface compresses its history. This book begins inside that compression.</description>
+      <itunes:summary>A resolved surface compresses its history. This book begins inside that compression.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_00-prologue.mp3" length="8028349" type="audio/mpeg"/>
+      <itunes:duration>0:11:09</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Part I: Before a House Could Be Drawn</title>
+      <itunes:title>Part I: Before a House Could Be Drawn</itunes:title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-part-1</guid>
+      <link>https://echopond.github.io/site/podcast/#part-1</link>
+      <pubDate>Mon, 07 Sep 2026 11:54:00 +0000</pubDate>
+      <description>A walk conducted by phone. &quot;I love it.&quot; What we agreed to carry. A deed is not an origin. All wrong. Five bedrooms before a plan. A handoff, not a beginning. The arrow.</description>
+      <itunes:summary>A walk conducted by phone. &quot;I love it.&quot; What we agreed to carry. A deed is not an origin. All wrong. Five bedrooms before a plan. A handoff, not a beginning. The arrow.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_01-part-1.mp3" length="15206483" type="audio/mpeg"/>
+      <itunes:duration>0:21:07</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Interlude: What the Echo Returns</title>
+      <itunes:title>Interlude: What the Echo Returns</itunes:title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-interlude</guid>
+      <link>https://echopond.github.io/site/podcast/#interlude</link>
+      <pubDate>Mon, 07 Sep 2026 11:55:00 +0000</pubDate>
+      <description>The pond, the name, and what a place gives back.</description>
+      <itunes:summary>The pond, the name, and what a place gives back.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_02-interlude.mp3" length="3117225" type="audio/mpeg"/>
+      <itunes:duration>0:04:20</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Part II: Choosing the House-Shaped House</title>
+      <itunes:title>Part II: Choosing the House-Shaped House</itunes:title>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-part-2</guid>
+      <link>https://echopond.github.io/site/podcast/#part-2</link>
+      <pubDate>Mon, 07 Sep 2026 11:56:00 +0000</pubDate>
+      <description>A brief written as life. 611 sq. ft. of work. Hardlined. L or pinwheel. The number. Five scenarios. Returning to the brief. A form that could become home.</description>
+      <itunes:summary>A brief written as life. 611 sq. ft. of work. Hardlined. L or pinwheel. The number. Five scenarios. Returning to the brief. A form that could become home.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_03-part-2.mp3" length="12578042" type="audio/mpeg"/>
+      <itunes:duration>0:17:28</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Part III: Paying for the Line on the Drawing</title>
+      <itunes:title>Part III: Paying for the Line on the Drawing</itunes:title>
+      <itunes:episode>5</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-part-3</guid>
+      <link>https://echopond.github.io/site/podcast/#part-3</link>
+      <pubDate>Mon, 07 Sep 2026 11:57:00 +0000</pubDate>
+      <description>What a lender could see. Onward. Before every dollar was secured. Fourteen hundred feet. The crossing. What the surface could not say. Ground that could bear.</description>
+      <itunes:summary>What a lender could see. Onward. Before every dollar was secured. Fourteen hundred feet. The crossing. What the surface could not say. Ground that could bear.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_04-part-3.mp3" length="14851322" type="audio/mpeg"/>
+      <itunes:duration>0:20:38</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Part IV: The Difficult Work of a Simple Form</title>
+      <itunes:title>Part IV: The Difficult Work of a Simple Form</itunes:title>
+      <itunes:episode>6</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-part-4</guid>
+      <link>https://echopond.github.io/site/podcast/#part-4</link>
+      <pubDate>Mon, 07 Sep 2026 11:58:00 +0000</pubDate>
+      <description>Before the walls existed. A wire in open space. More glass than wall. The puzzle arrived in pieces. An opening found at full scale. One dark field. An eighth of an inch. A second look changed the direction. The key.</description>
+      <itunes:summary>Before the walls existed. A wire in open space. More glass than wall. The puzzle arrived in pieces. An opening found at full scale. One dark field. An eighth of an inch. A second look changed the direction. The key.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_05-part-4.mp3" length="19337069" type="audio/mpeg"/>
+      <itunes:duration>0:26:51</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Part V: After Completion Changes Tense</title>
+      <itunes:title>Part V: After Completion Changes Tense</itunes:title>
+      <itunes:episode>7</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-part-5</guid>
+      <link>https://echopond.github.io/site/podcast/#part-5</link>
+      <pubDate>Mon, 07 Sep 2026 11:59:00 +0000</pubDate>
+      <description>Like we had been here forever. Complete, but not finished. The room with a door. The double sun. A philosophy we were sitting inside. Four verbs at the threshold.</description>
+      <itunes:summary>Like we had been here forever. Complete, but not finished. The room with a door. The double sun. A philosophy we were sitting inside. Four verbs at the threshold.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_06-part-5.mp3" length="11869601" type="audio/mpeg"/>
+      <itunes:duration>0:16:29</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Coda: What Returned Changed</title>
+      <itunes:title>Coda: What Returned Changed</itunes:title>
+      <itunes:episode>8</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">echopond-house-shaped-house-coda</guid>
+      <link>https://echopond.github.io/site/podcast/#coda</link>
+      <pubDate>Mon, 07 Sep 2026 12:00:00 +0000</pubDate>
+      <description>The last word, after the house had become ordinary life.</description>
+      <itunes:summary>The last word, after the house had become ordinary life.</itunes:summary>
+      <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_07-coda.mp3" length="3539777" type="audio/mpeg"/>
+      <itunes:duration>0:04:55</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
