@@ -265,7 +265,7 @@
     var cover = new URL('../media/podcast/cover.jpg', location.href).href;
     navigator.mediaSession.metadata = new MediaMetadata({
       title: ep.number + ' · ' + ep.title,
-      artist: 'Chris Glass',
+      artist: 'Chris R. Glass',
       album: 'A House-Shaped House',
       artwork: [{ src: cover, sizes: '1400x1400', type: 'image/jpeg' }]
     });
