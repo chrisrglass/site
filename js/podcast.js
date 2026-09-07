@@ -24,7 +24,7 @@
     { id: 'part-5',    number: 'Part V',    title: 'After Completion Changes Tense', file: 'echo-pond_06-part-5.mp3', duration: 989,
       sections: 'Like we had been here forever · Complete, but not finished · The room with a door · The double sun · A philosophy we were sitting inside · Four verbs at the threshold' },
     { id: 'coda',      number: 'Coda',      title: 'What Returned Changed', file: 'echo-pond_07-coda.mp3', duration: 295,
-      sections: 'Final thoughts on the work of building together: people staying answerable to one another while reality changes the terms of the work.' }
+      sections: 'Final thoughts on the work of building together.' }
   ];
 
   var SPEEDS = [1, 1.25, 1.5, 1.75, 2, 0.75];
