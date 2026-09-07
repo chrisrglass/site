@@ -14,7 +14,7 @@
     { id: 'part-1',    number: 'Part I',    title: 'Before a House Could Be Drawn', file: 'echo-pond_01-part-1.mp3', duration: 1267,
       sections: 'A walk conducted by phone · "I love it" · What we agreed to carry · A deed is not an origin · All wrong · Five bedrooms before a plan · A handoff, not a beginning · The arrow' },
     { id: 'interlude', number: 'Interlude', title: 'What the Echo Returns', file: 'echo-pond_02-interlude.mp3', duration: 260,
-      sections: 'The pond, the name, and what a place gives back.' },
+      sections: 'Two tellings of the Echo myth: Ovid’s nymph, who can only repeat, and Longus’s, whose scattered voice returns through the earth changed by what received it.' },
     { id: 'part-2',    number: 'Part II',   title: 'Choosing the House-Shaped House', file: 'echo-pond_03-part-2.mp3', duration: 1048,
       sections: 'A brief written as life · 611 sq. ft. of work · Hardlined · L or pinwheel · The number · Five scenarios · Returning to the brief · A form that could become home' },
     { id: 'part-3',    number: 'Part III',  title: 'Paying for the Line on the Drawing', file: 'echo-pond_04-part-3.mp3', duration: 1238,
@@ -24,7 +24,7 @@
     { id: 'part-5',    number: 'Part V',    title: 'After Completion Changes Tense', file: 'echo-pond_06-part-5.mp3', duration: 989,
       sections: 'Like we had been here forever · Complete, but not finished · The room with a door · The double sun · A philosophy we were sitting inside · Four verbs at the threshold' },
     { id: 'coda',      number: 'Coda',      title: 'What Returned Changed', file: 'echo-pond_07-coda.mp3', duration: 295,
-      sections: 'The last word, after the house had become ordinary life.' }
+      sections: 'Final thoughts on the work of building together: people staying answerable to one another while reality changes the terms of the work.' }
   ];
 
   var SPEEDS = [1, 1.25, 1.5, 1.75, 2, 0.75];
@@ -161,7 +161,9 @@
     EPISODES.forEach(function (ep) {
       var p = state.positions[ep.id] || 0;
       var pct = ep.duration ? Math.min(100, (p / ep.duration) * 100) : 0;
-      ep.el.querySelector('.episode-progress span').style.width = pct + '%';
+      var bar = ep.el.querySelector('.episode-progress');
+      bar.classList.toggle('has-progress', pct > 0);
+      bar.querySelector('span').style.width = pct + '%';
     });
   }
 
