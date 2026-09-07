@@ -15,9 +15,9 @@
     <itunes:owner>
       <itunes:name>Chris R. Glass</itunes:name>
     </itunes:owner>
-    <itunes:image href="https://echopond.github.io/site/media/podcast/cover.jpg"/>
+    <itunes:image href="https://echopond.github.io/site/media/podcast/cover-roof.jpg"/>
     <image>
-      <url>https://echopond.github.io/site/media/podcast/cover.jpg</url>
+      <url>https://echopond.github.io/site/media/podcast/cover-roof.jpg</url>
       <title>A House-Shaped House</title>
       <link>https://echopond.github.io/site/podcast/</link>
     </image>
@@ -136,8 +136,8 @@
       <guid isPermaLink="false">echopond-house-shaped-house-coda</guid>
       <link>https://echopond.github.io/site/podcast/#coda</link>
       <pubDate>Mon, 07 Sep 2026 12:00:00 +0000</pubDate>
-      <description>Final thoughts on the work of building together: people staying answerable to one another while reality changes the terms of the work.</description>
-      <itunes:summary>Final thoughts on the work of building together: people staying answerable to one another while reality changes the terms of the work.</itunes:summary>
+      <description>Final thoughts on the work of building together.</description>
+      <itunes:summary>Final thoughts on the work of building together.</itunes:summary>
       <enclosure url="https://echopond.github.io/site/media/podcast/echo-pond_07-coda.mp3" length="3539777" type="audio/mpeg"/>
       <itunes:duration>0:04:55</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
