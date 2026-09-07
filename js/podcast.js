@@ -264,7 +264,7 @@
   function updateMediaSession() {
     if (!('mediaSession' in navigator) || state.index < 0) return;
     var ep = EPISODES[state.index];
-    var cover = new URL('../media/podcast/cover.jpg', location.href).href;
+    var cover = new URL('../media/podcast/cover-roof.jpg', location.href).href;
     navigator.mediaSession.metadata = new MediaMetadata({
       title: ep.number + ' · ' + ep.title,
       artist: 'Chris R. Glass',
