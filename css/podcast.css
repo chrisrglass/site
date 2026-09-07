@@ -352,11 +352,11 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-areas:
-    "cover text controls"
-    "time  time extra";
+    "cover text     text"
+    "time  controls extra";
   align-items: center;
-  gap: 0.5rem 1rem;
-  padding: 0.75rem 1rem;
+  gap: 0.5rem 0.75rem;
+  padding: 0.6rem 0.75rem;
 }
 
 .player-cover {
@@ -395,7 +395,25 @@
   grid-area: controls;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.25rem;
+}
+
+@media (max-width: 479px) {
+  .player-kicker {
+    display: none;
+  }
+  .player-title {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 0.875rem;
+  }
+  .ctl--text {
+    padding: 0 0.4rem;
+    font-size: 0.6875rem;
+  }
 }
 
 .ctl {
@@ -473,6 +491,9 @@
     grid-template-areas: "cover text controls time extra";
     gap: 1.25rem;
     padding: 0.75rem 2rem;
+  }
+  .player-controls {
+    justify-content: flex-start;
   }
   .player-cover {
     width: 52px;
