@@ -77,15 +77,26 @@
 
       <section class="subscribe article-body">
         <h2>Listen in a podcast app</h2>
-        <p>Copy the feed address into any podcast app that accepts a private or custom feed. In Apple Podcasts, choose <em>File → Follow a Show by URL</em>. In Overcast or Pocket Casts, choose <em>Add by URL</em>.</p>
+        <p>Copy the feed address into any podcast app that accepts a private or custom feed. On an iPhone or Mac, the Apple Podcasts button below follows the show directly. In Overcast, choose <em>Add by URL</em>.</p>
         <div class="feed-url">
           <code id="feed-url">https://echopond.github.io/site/podcast/feed.xml</code>
           <button class="btn btn--small" type="button" id="copy-feed">Copy</button>
         </div>
-        <p class="subscribe-links">
-          <a href="overcast://x-callback-url/add?url=https%3A%2F%2Fechopond.github.io%2Fsite%2Fpodcast%2Ffeed.xml">Open in Overcast</a>
-          <a href="pktc://subscribe/echopond.github.io/site/podcast/feed.xml">Open in Pocket Casts</a>
-        </p>
+        <div class="subscribe-links">
+          <a class="app-link" href="podcast://echopond.github.io/site/podcast/feed.xml">
+            <svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="9.5" r="2.6" fill="#fff"/><path d="M9.6 19.2c-.5-2.2-.7-3.6-.7-4.4 0-1.4 1.3-2.2 3.1-2.2s3.1.8 3.1 2.2c0 .8-.2 2.2-.7 4.4-.1.5-.5.8-1 .8h-2.8c-.5 0-.9-.3-1-.8z" fill="#fff"/><path d="M7.4 14.2A5.6 5.6 0 0 1 6.4 11a5.6 5.6 0 1 1 10.2 3.2" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Open in Apple Podcasts
+          </a>
+          <a class="app-link" href="overcast://x-callback-url/add?url=https%3A%2F%2Fechopond.github.io%2Fsite%2Fpodcast%2Ffeed.xml">
+            <svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2" fill="#fff"/><path d="M8.2 8.2a5.4 5.4 0 0 0 0 7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/><path d="M12 14.2l-1.6 5.6M12 14.2l1.6 5.6" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg>
+            Open in Overcast
+          </a>
+          <!-- Spotify does not accept feed URLs directly. Submit the feed at podcasters.spotify.com, then paste the show URL into href and remove the hidden attribute. -->
+          <a class="app-link" id="spotify-link" href="#" hidden>
+            <svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M6.8 9.4c3.6-1 7.6-.7 10.6 1M7.4 12.3c3-.8 6.2-.5 8.7.9M8 15c2.4-.6 4.9-.4 6.9.8" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Open in Spotify Podcasts
+          </a>
+        </div>
       </section>
 
       <footer class="article-credits">
