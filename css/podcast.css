@@ -45,7 +45,9 @@
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.01em;
+  line-height: 1.15;
   margin-bottom: 0.75rem;
+  text-wrap: balance;
 }
 
 .podcast-subtitle {
@@ -55,6 +57,7 @@
   line-height: 1.5;
   color: #333;
   margin-bottom: 1rem;
+  text-wrap: pretty;
 }
 
 .podcast-byline {
@@ -198,8 +201,10 @@
   font-family: 'Inter', sans-serif;
   font-size: 1.0625rem;
   font-weight: 500;
+  line-height: 1.35;
   color: #1a1a1a;
   margin-bottom: 0.35rem;
+  text-wrap: balance;
 }
 
 .episode-sections {
@@ -207,14 +212,19 @@
   font-size: 0.9375rem;
   line-height: 1.6;
   color: #555;
+  text-wrap: pretty;
 }
 
 .episode-progress {
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
   height: 2px;
-  background: #e5e5e5;
+  background: transparent; /* no track; only the played portion shows once a chapter is started */
   width: 100%;
   max-width: 260px;
+}
+
+.episode-progress:not(.has-progress) {
+  display: none;
 }
 
 .episode-progress span {
@@ -304,6 +314,10 @@
   border: 1px solid #ddd;
   border-radius: 999px;
   transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.app-link[hidden] {
+  display: none;
 }
 
 .app-link:hover {
@@ -414,23 +428,6 @@
   gap: 0.25rem;
 }
 
-@media (max-width: 479px) {
-  .player-kicker {
-    display: none;
-  }
-  .player-title {
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    font-size: 0.875rem;
-  }
-  .ctl--text {
-    padding: 0 0.4rem;
-    font-size: 0.6875rem;
-  }
-}
-
 .ctl {
   width: 36px;
   height: 36px;
@@ -538,6 +535,249 @@
 .toast.is-visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* ---------- Phone layout (under 640px) ----------
+   Text gets the full column width, the show header centers like a
+   podcast app, controls stack, and every tap target is at least 44px. */
+@media (max-width: 639px) {
+  .podcast-page main {
+    padding-top: 4.5rem;
+    padding-bottom: 9.5rem;
+  }
+
+  /* The site-wide scrollable nav shows a scrollbar in some browsers; hide it here. */
+  .podcast-page .site-header {
+    scrollbar-width: none;
+  }
+  .podcast-page .site-header::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Show header, centered */
+  .podcast-header {
+    padding: 1.25rem 1.25rem 1.75rem;
+    gap: 1.25rem;
+    text-align: center;
+  }
+  .podcast-cover {
+    max-width: 200px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  .podcast-kicker {
+    margin-bottom: 0.5rem;
+  }
+  .podcast-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .podcast-subtitle {
+    font-size: 1.3125rem;
+    line-height: 1.4;
+    max-width: 30ch;
+    margin: 0 auto 0.75rem;
+  }
+  .podcast-byline {
+    font-size: 1rem;
+  }
+  .podcast-meta {
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+  .podcast-actions {
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  .podcast-actions .btn {
+    text-align: center;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+  .podcast-actions .btn--primary {
+    flex: 1 1 100%;
+  }
+
+  /* Intro */
+  .podcast-intro {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .podcast-intro .lead {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    text-wrap: pretty;
+  }
+
+  /* Chapter list: play button on the left, everything else full width */
+  .episodes {
+    padding: 0 1.25rem 2rem;
+  }
+  .episodes-heading {
+    font-size: 1rem;
+  }
+  .episode {
+    grid-template-columns: 44px 1fr;
+    grid-template-areas:
+      "play main"
+      ".    side";
+    gap: 0.35rem 0.9rem;
+    padding: 1.1rem 0;
+  }
+  .episode-play {
+    grid-area: play;
+    width: 44px;
+    height: 44px;
+    margin-top: 0;
+    font-size: 0.875rem;
+  }
+  .episode-main {
+    grid-area: main;
+    min-width: 0;
+  }
+  .episode-number {
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+  }
+  .episode-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.4rem;
+  }
+  .episode-sections {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+  .episode-progress {
+    max-width: none;
+  }
+  .episode-side {
+    grid-area: side;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: -0.25rem;
+  }
+  .episode-duration {
+    font-size: 0.875rem;
+  }
+  .episode-link {
+    font-size: 0.875rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Subscribe: stack the controls */
+  .subscribe {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .subscribe h2 {
+    font-size: 1rem;
+  }
+  .subscribe p {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+  .feed-url {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+  }
+  .feed-url code {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 0.75rem 0.9rem;
+  }
+  .feed-url .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .subscribe-links {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .app-link {
+    justify-content: flex-start;
+    min-height: 48px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9375rem;
+  }
+  .app-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Credits */
+  .podcast .article-credits {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Player: cover + title + speed/share on the first row,
+     elapsed time + transport on the second. Nothing overflows at 320px. */
+  .player-inner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "cover text     extra"
+      "time  controls controls";
+    gap: 0.4rem 0.6rem;
+    padding: 0.6rem 0.9rem 0.7rem;
+  }
+  .player-cover {
+    width: 48px;
+    height: 48px;
+  }
+  .player-kicker {
+    display: none;
+  }
+  .player-title {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 0.9375rem;
+    line-height: 1.3;
+  }
+  .player-controls {
+    justify-content: flex-end;
+    gap: 0.1rem;
+  }
+  .player-extra {
+    align-self: center;
+  }
+  .ctl {
+    width: 40px;
+    height: 40px;
+  }
+  .ctl span {
+    width: 28px;
+    height: 28px;
+    font-size: 0.6875rem;
+  }
+  .ctl--play {
+    width: 48px;
+    height: 48px;
+    font-size: 1.05rem;
+  }
+  .ctl--text {
+    min-height: 40px;
+    padding: 0 0.45rem;
+    font-size: 0.8125rem;
+  }
+  .player-time {
+    font-size: 0.8125rem;
+    align-self: center;
+  }
+  .toast {
+    bottom: 9rem;
+    max-width: calc(100% - 2rem);
+    text-align: center;
+  }
 }
 
 @media print {
